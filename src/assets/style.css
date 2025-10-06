@@ -1,0 +1,76 @@
+body{
+    background-color: #24A25914;
+}
+.inputSearch {
+  color: green;        /* لون النص داخل الـ input */
+  border-color: green;  /* لون الحد الخارجي */
+}
+
+/* لو بدك تغير لون placeholder كمان */
+.inputSearch::placeholder {
+  color: green;
+  opacity: 1; /* مهم عشان يظهر بلون واضح */
+}
+.status-list li {
+  margin-bottom: 10px;       /* مسافة بين العناصر */
+  font-size: 16px;            /* حجم النص */
+  display: flex;
+  align-items: center;
+  gap: 10px;                  /* المسافة بين الـ badge والنص */
+}
+
+.custom-badge {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;        /* يحولها لدائرة */
+}
+.custom-link {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+/* Hover effect */
+.custom-link:hover {
+  color: green;
+  background-color: #d9fdd3; /* أخضر فاتح */
+  text-decoration: none;
+}
+
+/* عند الضغط (active/focus) */
+.custom-link:focus,
+.custom-link:active {
+  outline: none;
+  box-shadow: none;
+  background-color: #d9fdd3 !important; /* نفس الأخضر الفاتح */
+  color: green !important;
+}
+
+/* إزالة اللون الأزرق الافتراضي للرابط */
+a.custom-link {
+  color: black;
+}
+a.custom-link:hover {
+  color: green;
+}
+a.custom-link:visited {
+  color: black;
+}
+a.custom-link:focus {
+  color: green;
+}
+
+/* السهم */
+.arrow {
+  display: inline-block;
+  transition: transform 0.3s;
+}
+.arrow.open {
+  transform: rotate(90deg);
+}
+
